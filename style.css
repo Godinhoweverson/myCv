@@ -1,0 +1,211 @@
+*{
+    border: 0;
+    margin: 0;
+    padding:0;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 100%;
+    width: 900px;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+h1{
+    font-weight: bold;
+    height: 20%;
+}
+
+h3{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #050b1f;
+}
+
+h5{
+    margin-top: 0.4rem;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    padding: 3.5rem 3.5rem 3.5rem 0;
+}
+
+#profile-img{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+#profile-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+
+#details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:75%;
+    height:100%;
+    background-color:#c7d8e7;
+    color:#050b1f;
+    mask: radial-gradient(10% 100px at left,transparent 100%,black);
+}
+
+.contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 40%;
+    height: 30%;
+}
+
+.contact-details-item a{
+    text-decoration: none;
+    color:#050b1f;
+}
+
+.contact-details-email{
+    height: 20%;
+}
+
+
+
+main{
+    display:flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+    background-color:#c7d8e7;
+    padding: 1rem;
+}
+
+#education,#skills,#languages{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width:98%;
+    padding: 1rem;
+}
+
+#education{
+    height: 30%;
+}
+
+#skills{
+ height: 40%;
+}
+
+#languages{
+    height: 15%;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+#information{
+    margin: 1rem;
+    width: 55%;
+    height: 100%;
+}
+
+#projects, #employment{
+    margin-top: 2rem;
+}
+
+p{
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+
+@media only screen and (max-width:769px){
+header{
+    padding: 3.5rem 3.5rem 1rem 0;
+}
+
+#profile-img{
+    display: none;
+}
+
+#details{
+    width:100%;
+    mask:none;
+}
+
+main{
+    flex-direction:column-reverse;
+    margin: 1rem;
+} 
+aside{
+    width: 98%;
+    border-radius: 0;
+    padding: 0;
+}
+
+#information{
+    width: 98%;
+}
+
+}
+
+@media only screen and (max-width:640px){
+    .contact-details{
+        width: 60%;
+    }
+
+    #details h1{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .contact-details{
+        width: 80%;
+    }
+
+    #details h1{
+        font-size: 1.2rem;
+    }
+}
